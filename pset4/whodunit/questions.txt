@@ -1,0 +1,13 @@
+1.  Header that declares sets of integer types having specified width.
+2.  The point of using uint8_t, uint32_t, int32_t, and uint16_t is to assign a specified amount of memory for each defined type.
+3.  BYTE: 1 byte, DWORD: 4 bytes, LONG: 4 bytes, and WORD: 2 bytes.
+4.  The first two bytes of any BMP are 0x42 and 0x4D (BM in ASCII).
+5.  bfSize: size, in bytes, of the bitmap file.
+    biSize: number of bytes required by the structure.
+6.  If biHeight is negative, the bitmap is a top-down, begining at the top-left pixel.
+7.  biBitCount specifies the BMP’s color depth.
+8.  fopen might return NULL in lines 24 and 32 of copy.c if the command line arguments for input and output files are not valid paths or files can't be opened.
+9.  The third argument to fread is always 1 because the second argument define the size of the block to read to the total size of the struct that we want read, so we need to read only once.
+10. If bi.biWidth is 3, line 65 of copy.c assign the value 3 to padding.
+11. fseek set the file pointer position.
+12. We pass SEEK_CUR as third argument for fseek to change the location of the pointer from its current location.

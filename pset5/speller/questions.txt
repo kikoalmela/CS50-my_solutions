@@ -1,0 +1,12 @@
+0.  "pneumonoultramicroscopicsilicovolcanoconiosis" is an example of the maximum length for a word defined in dictionary.h. Is a word invented by the president of the National Puzzlers' League as a synonym for the disease known as silicosis. It is the longest word in the English language published in a dictionary, the Oxford English Dictionary, which defines it as "an artificial long word said to mean a lung disease caused by inhaling very fine ash and sand dust."
+1.  getrusage() returns resource usage measures. In this case, with RUSAGE_SELF, it returns resource usage statistics for the calling process, which is the sum of resources used by all threads in the process
+2.  There are 16 members in struct rusage
+3.  Because the function clalculate() needs the adresses of before and after in the memory, and then to access, inside the function, to the values of these structs and does the maths to calculate de time.
+4.  The for loop iterate through chars in the text file previously opened and stored at *fp, untill EOF is found
+    Each char, while it's alphabetical or apostrophe, is appended to the array "word" at the index "index", then increases index by 1
+    It ignore words longer than LENGTH and words whit numbers. Iterate through and reset "index"
+    When char that is not alphabetical or apostrophe is reached, i.e. the end of a word, it terminates the current word with "\0" and increases the words' counter
+    It checks if the word is misspelled and print it out if so.
+    Prepare for another word reseting "index" to 0
+5.  Because fscanf could see chars like period or comma as part of the word
+6.  The parameters are declared as 'const' to prevent the content of the locations these pointers point to from being modified by the functions

@@ -1,0 +1,4 @@
+0. The framework allows dimensions from 3 x 3 to 9 x 9
+1. The board is represented with tiles numbered 1 through d*d ´1 stored in a 2D array
+2. The function greet() is called to greet the player at the game's start
+3. I need to implement the functions: init(), draw(), move() and won()
