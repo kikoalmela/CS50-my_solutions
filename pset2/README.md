@@ -64,3 +64,30 @@ Design and implement a program, `caesar`, that encrypts messages using Caesar’
 - Your program must preserve case: capitalized letters, though rotated, must remain capitalized letters; lowercase letters, though rotated, must remain lowercase letters.
 
 - After outputting ciphertext, you should print a newline. Your program should then exit by returning `0` from main.
+
+## Crack
+
+Implement a program that cracks passwords, per the below.
+
+```sh
+$ ./crack 50fkUxYHbnXGw
+rofl
+```
+
+### Specification
+
+Design and implement a program, `crack`, that cracks passwords.
+
+- Implement your program in a file called `crack.c` in a directory called `crack`.
+
+- Your program should accept a single command-line argument: a hashed password.
+
+- If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error (of your choice) and exit immediately, with `main` returning `1` (thereby signifying an error).
+
+- Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing the password in the clear followed by `\n`, nothing more, nothing less, with `main` returning `0`.
+
+- Assume that each password has been hashed with C’s DES-based (not MD5-based) `crypt` function.
+
+- Assume that each password is no longer than (gasp) four characters
+
+- Assume that each password is composed entirely of alphabetical characters (uppercase and/or lowercase).
